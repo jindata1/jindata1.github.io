@@ -53,32 +53,38 @@ which can be deployed using the methods outlined in the [Jekyll Documentation][d
 
 
 ## GitHub Pages
-
-As of September 2024, you can deploy to GitHub Pages using a custom GitHub Action. 
-You can read more about it in chapter [Deploy](deploy.md){:.heading.flip-title}.
-{:.note}
-
-If you're using the Starter Kit based on the `gh-pages` branch, or the `starter-kit-gh-pages` folder from the **PRO Version**,
-all you have to do is push your repository:
+If you're using the Starter Kit for GitHub pages, all you have to do is push your repository:
 
 ```bash
 $ git add .
-$ git commit "Update content"
-$ git push origin gh-pages
+$ git commit "Update"
+$ git push origin master
 ```
 
-Make sure _Source_ is set to "Deploy from a branch" in the _Pages_ section of the repository settings, 
-and that the branch you've pushed to matches the one selected in the dropdown:
+<!-- ## GitHub Pages
+To deploy to GitHub Pages, the steps are:
 
-![GitHub repository settings](../assets/img/docs/pipeline-gh-pages.png)
-{:.border}
+~~~bash
+$ cd _site
+$ git init # you only need to do this once
+$ git remote add origin <github_remote_url> # you only need to do this once
+$ git add .
+$ git commit -m "Build"
+$ git push origin master:<remote_branch>
+$ cd ..
+~~~
 
-Ensure these settings are set to continue using the GitHub Pages legacy pipeline.
-{:.figcaption}
+`github_remote_url`
+: Find this on your repository's GitHub page.
 
-Continue with [Deploy](deploy.md){:.heading.flip-title}
-{:.read-more}
+`remote_branch`
+: Either `master` for "user or organization pages", or `gh-pages` for "project pages"
 
+More on [user, organization, and project pages](https://help.github.com/articles/user-organization-and-project-pages/). -->
+
+
+<!-- Continue with [Advanced](advanced.md){:.heading.flip-title}
+{:.read-more} -->
 
 [deploy]: https://jekyllrb.com/docs/deployment-methods/
 [lsa]: https://en.wikipedia.org/wiki/Latent_semantic_analysis

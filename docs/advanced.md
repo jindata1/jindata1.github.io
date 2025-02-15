@@ -24,13 +24,11 @@ Enabling this feature requires that your content meets the following criteria:
 
 To enable this feature, create a `sw.js` file in the root of your project and add the following content:
 
-{% raw %}
 ```js
 ---
 ---
-importScripts("{{ '/assets/js/sw.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}");
+importScripts("{% raw %}{{ '/assets/js/sw.js' | relative_url }}?t={{ site.time | date_to_xmlschema }}{% endraw %}");
 ```
-{% endraw %}
 
 This will load the main service worker script from Hydejack's assets. The `site.time` part is necessary to make the service worker "byte different" every time you create a new build of your site, which triggers an update.
 
