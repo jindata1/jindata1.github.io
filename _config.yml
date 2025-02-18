@@ -50,10 +50,10 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Study
-    url:               /study/
+    url:               /Study/
     submenu: 
       - title:         Forensic
-        url:           /forensic/
+        url:           /Forensic/
   - title:             Documentation
     url:               /docs/
   - title:             About
