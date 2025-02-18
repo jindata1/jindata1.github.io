@@ -50,14 +50,10 @@ author:
 # Add links to the sidebar.
 menu:
   - title:             Study
-    url:               /example/
+    url:               /study/
     submenu: 
-      - title:         OS
-        url:           /os/
-      - title:         NETWORK
-        url:           /network/
-      - title:         HYDEJACK
-        url:           /hydejack/
+      - title:         Forensic
+        url:           /forensic/
   - title:             Documentation
     url:               /docs/
   - title:             About
