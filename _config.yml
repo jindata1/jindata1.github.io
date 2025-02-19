@@ -49,8 +49,18 @@ author:
 
 # Add links to the sidebar.
 menu:
-  - title:             Study
-    url:               /Study/
+  - title:             CTF
+    url:               /ctf/
+    submenu: 
+      - title:         Web
+        url:           /ctf/web/
+    submenu: 
+      - title:         Forensic
+        url:           /ctf/forensic/
+  - title:             Work
+    url:               /work/
+  - title:             Project
+    url:               /Project/
     submenu: 
       - title:         Forensic
         url:           /Forensic/
